@@ -1,0 +1,19 @@
+!name Freeze
+reset
+  set input 0
+  set output 127
+   record
+  while input < 127
+  set input input + 1
+  wait msec 2
+  next
+  overdub
+  wait msec 200
+  while input > 0
+  set input input -1
+  wait 2 msec
+  next
+  
+   play
+   end
+

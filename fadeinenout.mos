@@ -1,0 +1,17 @@
+!name Fade In en Out
+
+if output >0
+  message Fade Out
+  while output > 0
+  set output output - 1
+  Wait msec 100
+  next
+else
+  message Fade In
+  while output < 127
+ set output output + 1
+ wait msec 100
+ next
+endif
+
+

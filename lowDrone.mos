@@ -1,0 +1,26 @@
+!name LowDRONE
+reset
+  set input 0
+  set output 0
+   record
+   message Start Drone FadeIn
+    while input < 127
+    set input input + 1
+    Wait msec 5
+  next
+   overdub
+   wait msec 1000
+   message Fade Out
+    while input > 0
+    set input input - 1
+    wait msec 7
+  next
+   play
+   speedtoggle
+   set input 127
+   while output < 127
+  set output output + 1
+  wait msec 10
+  next
+end
+

@@ -1,0 +1,17 @@
+!name Reverse/Halfspeed
+!sustain 750
+
+if !inReverse
+  reverse
+else 
+  reverse
+endif 
+
+end
+
+Label sustain
+if sustainCount == 1
+ 
+   speedtoggle
+
+endif

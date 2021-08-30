@@ -1,0 +1,34 @@
+!name Record/OverDub/Reset
+!sustain 2000
+
+#Script based on JamManTap posted by PalmWino
+#Sustain keeps the longpress rec -> reset function
+
+#MurrayS Notes:
+# tap once to begin recording
+# tap 2 play loop
+# tap 3 start overdub
+# tap 4 play overdub with recorded loop
+# sustained tap does not reset on zoom g9.2tt
+# sustain increased from default .25 sec to 2 sec
+
+# 1st tap
+if mode == reset
+  Record
+
+# 2nd tap
+else if mode == record
+  Overdub
+
+# 3rd tap
+else if mode == overdub
+  Play
+
+endif
+
+end
+
+Label sustain
+if sustainCount == 1
+  Reset
+endif

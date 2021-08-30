@@ -1,0 +1,10 @@
+!name Copy -12
+
+set emptytrackaction copy 
+NextTrack
+instantmutiply4
+speedtoggle
+
+end
+
+
